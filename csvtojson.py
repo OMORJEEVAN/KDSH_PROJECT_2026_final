@@ -4,17 +4,6 @@ import os
 
 def rename_file(old_name, new_name):
     try:
-        # Check if the old file exists
-        if not os.path.isfile(old_name):
-            print(f"Error: File '{old_name}' does not exist.")
-            return
-
-        # Prevent overwriting an existing file
-        if os.path.exists(new_name):
-            print(f"Error: A file named '{new_name}' already exists.")
-            return
-
-        # Perform the rename
         os.rename(old_name, new_name)
         print(f"File renamed from '{old_name}' to '{new_name}' successfully.")
 

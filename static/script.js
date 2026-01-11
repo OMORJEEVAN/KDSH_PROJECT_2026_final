@@ -8,10 +8,10 @@ async function sendMessage() {
     const imageFile = imageInput.files[0];
     const bs = bsbox.files[0];
 
-//    if (!imageFile || !message || !bs) {
-//        // Optional: Add a visual shake or alert here if missing inputs
-//        return;
-//    }
+   if (!imageFile || !message || !bs) {
+       // Optional: Add a visual shake or alert here if missing inputs
+       return;
+   }
 
     input.value = "";
     // We don't clear file inputs immediately so user can ask follow ups,
@@ -50,7 +50,7 @@ async function sendMessage() {
         // Interactive Menu (New Control Panel Style)
         botDiv.innerHTML = `
         <div class="control-panel">
-            <button class="control-btn" id="btn-down" title="Download JSON">Download JSON</button>
+            <button class="control-btn" id="btn-down" title="Download JSON">Download RESULTS.CSV</button>
             <button class="control-btn primary" id="btn-text" title="Show Visual Cards">Show Results</button>
             <button class="control-btn" id="btn-both">Both Actions</button>
         </div>
@@ -125,7 +125,7 @@ async function sendMessage() {
                  resultsContainer.appendChild(card);
 
                  // Animation delay
-                 await new Promise(r => setTimeout(r, 80));
+                 await new Promise(r => setTimeout(r, 20));
                  chatBox.scrollTop = chatBox.scrollHeight;
              }
         };
@@ -198,8 +198,8 @@ function downloadJSON(data) {
   );
 
   const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.download = "response.json";
+  a.href = "/csv";
+  a.download = "results.csv";
   a.click();
 
   URL.revokeObjectURL(a.href);
