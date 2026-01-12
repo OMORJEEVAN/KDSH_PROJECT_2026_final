@@ -53,7 +53,7 @@ def run_inference():
             "rationale":" || ".join(rationale["evidence_passages"][:2])
         })
 
-    #  SAVE TO test.csv (NO LABEL)
+    #  SAVE TO test.csv 
     output_df = pd.DataFrame(results)
     output_df.to_csv(OUTPUT_PATH, index=False)
 
