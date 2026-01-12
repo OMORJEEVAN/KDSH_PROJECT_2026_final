@@ -72,6 +72,7 @@ Open your browser and navigate to http://localhost:5000 OR http://127.0.0.1:5000
     * *Green Cards* indicate behavior is consistent with the backstory.
     * *Red Cards* indicate behavior is inconsistent with the backstory.
     * Click *👁 Show Evidence* to read the specific lines that triggered the judgment.
+5. *The results.csv which has been created from given test.csv is already attached in the main directory, the web UI can be used to regenerate itfrom new given "story.txt" and "backstory.csv"(file names can be arbitrary)*
 
 
 
