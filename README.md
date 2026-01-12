@@ -5,6 +5,7 @@ A high-precision **Retrieval-Augmented Generation (RAG)** system built for the *
 ## The Collaborators
 1. **ARIT PATRA**@(https://github.com/OMORJEEVAN/)
 2. **ANISH SAHA**@(https://github.com/hex32-iitkgp)
+3. **SUJOY LOHAR**
 
 ## 🛠 The Pipeline
 
