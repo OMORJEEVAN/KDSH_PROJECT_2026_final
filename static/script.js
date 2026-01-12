@@ -104,9 +104,8 @@ async function sendMessage() {
                         ${claimHtml}
 
                         <div class="meter-container">
-                            <span>Confidence: ${confPercent}%</span>
                             <div class="progress-track">
-                                <div class="progress-fill" style="width: ${confPercent}%; background-color: ${barColor};"></div>
+                                <div class="progress-fill" style="width: 100%; background-color: ${barColor};"></div>
                             </div>
                         </div>
                     </div>
